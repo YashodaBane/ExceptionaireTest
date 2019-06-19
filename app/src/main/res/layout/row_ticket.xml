@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:background="@color/colorWhite1"
+    android:padding="10dp"
+    tools:context=".fragments.DetailFragment">
+
+    <ImageView
+        android:id="@+id/iv_movie"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitXY"
+        android:src="@mipmap/ic_launcher" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toStartOf="@+id/btn_show"
+        android:layout_toLeftOf="@+id/btn_show"
+        android:layout_toEndOf="@+id/iv_movie"
+        android:layout_toRightOf="@+id/iv_movie"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:text="@string/title"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_ratings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/ratings"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_release_year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="@string/release_year"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_genre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/genre"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_show"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@color/black"
+        android:text="@string/show_details"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+
+</RelativeLayout>
